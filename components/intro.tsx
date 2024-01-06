@@ -62,11 +62,11 @@ export default function Intro() {
             outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer border border-black/10
             ">Download Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition' /></a>
 
-            <a href="" className="group bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full
+            <a href="https://www.linkedin.com/in/linval-muchapirei-07a67617a/" target='_blank' className="group bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full
             outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10
             "><BsLinkedin className='opacity-60 group-hover:translate-y-1 transition'/></a>
 
-            <a href="" className="group bg-white p-4 flex items-center text-gray-700 gap-2 text-[1.35rem] rounded-full
+            <a href="https://github.com/LMuchapirei" target='_blank' className="group bg-white p-4 flex items-center text-gray-700 gap-2 text-[1.35rem] rounded-full
             outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10
             "><FaGithubSquare className='opacity-60 group-hover:translate-y-1 transition'/></a>
         </motion.div>

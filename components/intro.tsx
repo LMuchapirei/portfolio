@@ -54,10 +54,21 @@ export default function Intro() {
         animate={{ opacity:1,y:0}}
         transition={{delay:0.1}}
         className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'>
-            <Link href="#contact" className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/></Link>
-            <a href="" className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">Download Resume <HiDownload /></a>
-            <a href="" className="bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full"><BsLinkedin/></a>
-            <a href="" className="bg-white p-4 flex items-center text-gray-700 gap-2 text-[1.35rem] rounded-full"><FaGithubSquare/></a>
+            <Link href="#contact" className="group bg-gray-900 text-white px-7 py-3 
+            flex items-center gap-2 rounded-full 
+            outline-none focus:scale-110 hover:scale-110  active:scale-105 transition">Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/></Link>
+            
+            <a href="" className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full
+            outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer border border-black/10
+            ">Download Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition' /></a>
+
+            <a href="" className="group bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full
+            outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10
+            "><BsLinkedin className='opacity-60 group-hover:translate-y-1 transition'/></a>
+
+            <a href="" className="group bg-white p-4 flex items-center text-gray-700 gap-2 text-[1.35rem] rounded-full
+            outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10
+            "><FaGithubSquare className='opacity-60 group-hover:translate-y-1 transition'/></a>
         </motion.div>
     </section>
   )

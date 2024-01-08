@@ -1,6 +1,6 @@
 "use client"
 import { projectsData } from "@/lib/data"
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 import Image from "next/image"
 type ProjectProps = typeof projectsData[number] 
@@ -16,12 +16,15 @@ type ProjectProps = typeof projectsData[number]
     target:ref,
     offset:["0 1","1.33 1"]
   })
+  const scaleProgress = useTransform(scrollYProgress,[0,1],[0.5,1])
+  const opacityProgress = useTransform(scrollYProgress,[0,1],[0.6,1])
+
   return (
     <motion.div
     ref={ref} 
     style={{
-        scale:scrollYProgress,
-        opacity:scrollYProgress
+        scale:scaleProgress,
+        opacity:opacityProgress
     }}
     className="mb-3 sm:mb-8 last:mb-0"
     >

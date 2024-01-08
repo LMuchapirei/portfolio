@@ -4,7 +4,7 @@ import { projectsData } from '@/lib/data'
 import Project from './Project'
 export default function Projects() {
   return (
-    <section>
+    <section id="projects" className='scroll-mt-28'>
         <SectionHeading title='My Projects' children/>
         <div>
           { projectsData.map((project,index)=>(

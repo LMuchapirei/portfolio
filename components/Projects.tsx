@@ -1,8 +1,7 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import SectionHeading from './SectionHeading'
 import { projectsData } from '@/lib/data'
-import Image from "next/image"
-import { useScroll } from "framer-motion"
+import Project from './Project'
 export default function Projects() {
   return (
     <section>
